@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Added
 
-- Initial release of JsonCheck, a lightweight JSON schema and data validator written in TypeScript.
+- Initial release of JsonVerify, a lightweight JSON schema and data validator written in TypeScript.
 - Core functionality to validate primitive types (string, number, boolean, null).
 - Support for nested schemas and array validations.
 - TypeScript type definitions for Schema and Data.

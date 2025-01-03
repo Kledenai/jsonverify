@@ -1,6 +1,6 @@
-# JsonCheck
+# JsonVerify
 
-**JsonCheck** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs or configuration systems.
+**JsonVerify** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs or configuration systems.
 
 ## 🚀 Features
 
@@ -11,16 +11,16 @@
 
 ## 📦 Installation
 
-You can install JsonCheck using npm or yarn:
+You can install JsonVerify using npm or yarn:
 
 ```bash
-npm install jsoncheck
+npm install JsonVerify
 ```
 
 or
 
 ```bash
-yarn add jsoncheck
+yarn add JsonVerify
 ```
 
 ## 🛠️ Usage
@@ -28,7 +28,7 @@ yarn add jsoncheck
 ### Importing
 
 ```typescript
-import { validate } from "jsoncheck";
+import { validate } from "jsonverify";
 ```
 
 ### Basic Example

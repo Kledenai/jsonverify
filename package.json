@@ -1,5 +1,5 @@
 {
-  "name": "jsoncheck",
+  "name": "jsonverify",
   "version": "1.0.0",
   "type": "module",
   "description": "A lightweight JSON schema and data validator.",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kledenai/jsoncheck.git"
+    "url": "https://github.com/kledenai/jsonverify.git"
   },
   "bugs": {
-    "url": "https://github.com/kledenai/jsoncheck/issues"
+    "url": "https://github.com/kledenai/jsonverify/issues"
   },
-  "homepage": "https://github.com/kledenai/jsoncheck#readme",
+  "homepage": "https://github.com/kledenai/jsonverify#readme",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
