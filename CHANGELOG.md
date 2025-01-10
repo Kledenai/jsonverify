@@ -4,6 +4,22 @@ All notable changes to this project will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2025-01-10
+
+### Added
+
+- Support for optional properties using the `optional: true` keyword.
+- Validation for string constraints like `minLength` and `maxLength`.
+- Validation for number constraints like `minimum` and `maximum`.
+- Support for the `enum` keyword to restrict values to a predefined set.
+- Improved TypeScript type definitions to include explicit support for `optional`.
+- Expanded test coverage for optional properties, string and number constraints, and `enum` validation.
+
+### Fixed
+
+- Improved compatibility with TypeScript for schemas defined with `as const`.
+- Enhanced error messages and validation flow for better debugging.
+
 ## [1.0.0] - 2025-01-03
 
 ### Added
