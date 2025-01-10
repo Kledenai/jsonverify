@@ -1,6 +1,6 @@
 {
   "name": "jsonverify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A lightweight JSON schema and data validator.",
   "keywords": [
@@ -47,5 +47,8 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
     "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "jsonverify": "file:jsonverify-1.0.0.tgz"
   }
 }
