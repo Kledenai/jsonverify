@@ -1,26 +1,28 @@
+[![npm version](https://img.shields.io/npm/v/jsonverify)](https://www.npmjs.com/package/jsonverify)
+
 # JsonVerify
 
-**JsonVerify** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs or configuration systems.
+**JsonVerify** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs, configuration systems, or validation layers in modern applications.
 
-## 🚀 Features
+## ✨ Why Use JsonVerify?
 
-- Validation of primitive types (`string`, `number`, `boolean`, `null`).
-- Support for nested schemas (objects within objects).
-- Validation of arrays with schemas.
-- Fully written in TypeScript for maximum type safety.
+- 🚀 **Lightweight and Fast**: Optimized for performance in real-world applications.
+- 🛠️ **TypeScript First**: Fully typed for better developer experience and type safety.
+- 🔍 **Flexible**: Supports primitive types, nested schemas, arrays, and advanced constraints.
+- ✅ **Easy to Use**: Intuitive API that gets you started quickly.
 
 ## 📦 Installation
 
-You can install JsonVerify using npm or yarn:
+You can install jsonverify using npm or yarn:
 
 ```bash
-npm install JsonVerify
+npm install jsonverify
 ```
 
 or
 
 ```bash
-yarn add JsonVerify
+yarn add jsonverify
 ```
 
 ## 🛠️ Usage
@@ -31,7 +33,7 @@ yarn add JsonVerify
 import { validate } from "jsonverify";
 ```
 
-### Basic Example
+### Validating Basic Data
 
 ```typescript
 const schema = {
@@ -47,7 +49,7 @@ const data = {
 console.log(validate(schema, data)); // true
 ```
 
-### Example with Nested Schema
+### Validating Nested Data
 
 ```typescript
 const schema = {
@@ -59,15 +61,15 @@ const schema = {
 
 const data = {
   user: {
-    name: "John",
-    age: 30,
+    name: "Alice",
+    age: 25,
   },
 };
 
 console.log(validate(schema, data)); // true
 ```
 
-### Example with Arrays
+### Validating Arrays
 
 ```typescript
 const schema = {
@@ -89,6 +91,40 @@ const data = {
 console.log(validate(schema, data)); // true
 ```
 
+### Using Optional Properties
+
+```typescript
+const schema = {
+  type: "object",
+  properties: {
+    name: { type: "string" },
+    age: { type: "number" },
+    address: { type: "string", optional: true },
+  },
+};
+
+const data = {
+  name: "John",
+  age: 30,
+};
+
+console.log(validate(schema, data)); // true
+```
+
+### Using Constraints (minLength, maxLength, enum)
+
+```typescript
+const schema = {
+  type: "string",
+  enum: ["red", "green", "blue"],
+  minLength: 3,
+  maxLength: 5,
+};
+
+console.log(validate(schema, "red")); // true
+console.log(validate(schema, "yellow")); // false
+```
+
 ## 📜 API
 
 ```typescript
@@ -101,14 +137,6 @@ Validates the provided data against the schema.
 - `data`: The data to be validated.
 
 Returns: `true` if the data is valid, or `false` otherwise.
-
-## 🧪 Tests
-
-The project uses Jest for testing. To run the tests:
-
-```bash
-npm run test
-```
 
 ## 🔒️ Requirements
 
