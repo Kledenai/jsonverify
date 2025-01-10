@@ -1,6 +1,6 @@
 {
   "name": "jsonverify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A lightweight JSON schema and data validator.",
   "keywords": [
@@ -38,6 +38,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
