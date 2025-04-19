@@ -1,4 +1,4 @@
-import { Schema } from '../src/types';
+import type { Schema } from '../src/types';
 import { validate } from '../src/validator';
 
 test('validate basic schema', () => {

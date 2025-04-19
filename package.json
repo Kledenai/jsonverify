@@ -10,8 +10,8 @@
     "typescript"
   ],
   "author": {
-    "name": "Bruno Rocha",
-    "email": "bruno@khaneland.com"
+    "name": "Kledenai",
+    "email": "me@kledenai.com"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "lint": "eslint src",
     "start": "node dist/index.js",
     "prepare": "npm run build",
