@@ -8,12 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ### Added
 
+- Introduced tsup as the new bundler to generate both ES Modules (.js) and CommonJS (.cjs) builds.
 - Updated the TypeScript compiler settings to output ES Modules ("module": "ES2022", "target": "ES2022"), ensuring compatibility with "type": "module" in package.json.
 - Adjusted the build output to support named ESM imports such as import { validate } from 'jsonverify' without runtime errors.
 
 ### Fixed
 
 - Resolved an issue where the package could not be used in projects configured as ES Modules due to CommonJS build output, despite being published as an ESM package.
+- Fixed internal import paths and improved resolution behavior across environments (Node.js with ESM and CJS).
 
 ## [1.0.1] - 2025-01-10
 
