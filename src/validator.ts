@@ -1,4 +1,4 @@
-import { Schema, Data, JsonSchemaType } from './types';
+import type { Schema, Data, JsonSchemaType } from './types';
 
 export const validate = (schema: Schema, data: Data): boolean => {
   if (typeof schema === 'string') {
