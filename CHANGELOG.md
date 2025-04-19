@@ -4,6 +4,17 @@ All notable changes to this project will be documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.0.2] - 2025-04-19
+
+### Added
+
+- Updated the TypeScript compiler settings to output ES Modules ("module": "ES2022", "target": "ES2022"), ensuring compatibility with "type": "module" in package.json.
+- Adjusted the build output to support named ESM imports such as import { validate } from 'jsonverify' without runtime errors.
+
+### Fixed
+
+- Resolved an issue where the package could not be used in projects configured as ES Modules due to CommonJS build output, despite being published as an ESM package.
+
 ## [1.0.1] - 2025-01-10
 
 ### Added

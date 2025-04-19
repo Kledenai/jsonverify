@@ -43,7 +43,7 @@ const validateJsonSchema = (schema: any, data: any): boolean => {
 
   if (schema.enum) {
     if (!schema.enum.includes(data)) {
-      return false; // Valor não corresponde a nenhum item do enum
+      return false;
     }
   }
 
@@ -75,20 +75,16 @@ const validateJsonSchema = (schema: any, data: any): boolean => {
     for (const key in schema.properties) {
       const propertySchema = schema.properties[key];
 
-      // Verifica se a propriedade é opcional
       const isOptional = propertySchema?.optional || false;
 
-      // Se a propriedade for obrigatória e estiver ausente
       if (!(key in data) && schema.required?.includes(key)) {
         return false;
       }
 
-      // Se a propriedade for opcional e estiver ausente
       if (!(key in data) && isOptional) {
-        continue; // Ignorar validação
+        continue;
       }
 
-      // Se a propriedade estiver presente, validar
       if (key in data && !validate(propertySchema, data[key])) {
         return false;
       }
@@ -98,7 +94,7 @@ const validateJsonSchema = (schema: any, data: any): boolean => {
       const allowedKeys = Object.keys(schema.properties || {});
       for (const key in data) {
         if (!allowedKeys.includes(key)) {
-          return false; // Propriedade extra não permitida
+          return false;
         }
       }
     }
