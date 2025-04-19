@@ -1,10 +1,10 @@
 [![npm version](https://img.shields.io/npm/v/jsonverify)](https://www.npmjs.com/package/jsonverify)
 
-# JsonVerify
+# Jsonverify
 
-**JsonVerify** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs, configuration systems, or validation layers in modern applications.
+**Jsonverify** is a lightweight library for validating JSON schemas and data, written in TypeScript. It ensures that the provided data complies with defined schemas, making it ideal for JSON-based applications like APIs, configuration systems, or validation layers in modern applications.
 
-## ✨ Why Use JsonVerify?
+## ✨ Why Use Jsonverify?
 
 - 🚀 **Lightweight and Fast**: Optimized for performance in real-world applications.
 - 🛠️ **TypeScript First**: Fully typed for better developer experience and type safety.
